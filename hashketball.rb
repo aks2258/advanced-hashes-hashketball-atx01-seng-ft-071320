@@ -183,10 +183,9 @@ end
 
 
 def team_names
-  home_team = game_hash[:home][:team_name]
-  away_team = game_hash[:away][:team_name]
-  
-  home_team+" "+away_team
+  game_hash.each do |team, team_info|
+    team_info[:team_name]
+  end
 end
 
 
