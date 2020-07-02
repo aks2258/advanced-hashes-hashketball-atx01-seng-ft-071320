@@ -184,7 +184,7 @@ end
 
 def team_names
   game_hash.map do |home_or_away_key, team_info_value|
-    team_info[:team_name]
+    team_info_value[:team_name]
   end
 end
 
