@@ -183,7 +183,7 @@ end
 
 
 def team_names
-  game_hash.each do |team, team_info|
+  game_hash.map do |team, team_info|
     team_info[:team_name]
   end
 end
