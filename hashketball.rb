@@ -164,8 +164,8 @@ end
 
 def shoe_size(player_name)
   player_game_stats = get_player_helper.find do |player|
-    player_name == player[:player_name]
-  end
+                        player_name == player[:player_name]
+                      end
   player_game_stats[:shoe]
 end
 
@@ -177,8 +177,8 @@ end
 
 def player_stats(player_name)
   stats=get_player_helper.find do |player_name_value|
-    player_name == player_name_value[:player_name]
-  end
+          player_name == player_name_value[:player_name]
+        end
 end
 
 
