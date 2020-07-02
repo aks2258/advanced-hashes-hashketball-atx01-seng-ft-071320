@@ -176,8 +176,8 @@ end
 
 
 def player_stats(player_name)
-  stats=get_player_helper.find do |player|
-    player_name == player[:player_name]
+  stats=get_player_helper.find do |player_name_value|
+    player_name == player_name_value[:player_name]
   end
 end
 
