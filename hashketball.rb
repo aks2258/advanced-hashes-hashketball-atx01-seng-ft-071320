@@ -185,7 +185,7 @@ end
 def team_names
   home_team = game_hash[:home][:team_name]
   away_team = game_hash[:away][:team_name]
-  binding.pry
+  
   home_team+" "+away_team
 end
 
@@ -205,5 +205,3 @@ rebounds = 0
   end
   rebounds
 end
-
-binding.pry
