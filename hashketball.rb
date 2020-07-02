@@ -183,6 +183,7 @@ end
 
 
 def team_names
+  #map is altering game_hash by looking at the key (home and away) and returning the value (what's inside and directly accessible (home and away) of their team names
   game_hash.map do |home_or_away_key, team_info_value|
     team_info_value[:team_name]
   end
