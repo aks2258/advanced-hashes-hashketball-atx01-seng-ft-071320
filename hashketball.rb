@@ -156,8 +156,8 @@ end
 
 def num_points_scored(player_name)
   player_game_stats = get_player_helper.find do |player|
-    player_name == player[:player_name]
-  end
+                        player_name == player[:player_name]
+                      end
   player_game_stats[:points]
 end
 
