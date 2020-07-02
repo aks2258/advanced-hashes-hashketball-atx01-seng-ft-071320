@@ -181,11 +181,12 @@ def player_stats(player_name)
   end
 end
 
-binding.pry
 
 def team_names
-  home_team=  game_hash[:home][:team_name]
- + game_hash[:away][:team_name])
+  home_team = game_hash[:home][:team_name]
+  away_team = game_hash[:away][:team_name]
+  binding.pry
+  home_team+away_team
 end
 
 
