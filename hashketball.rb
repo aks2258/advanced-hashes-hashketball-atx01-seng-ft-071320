@@ -195,8 +195,8 @@ shoe_size = 0
 rebounds = 0
 
   game_hash.each do |home_or_away_key, team_info_value|
-    team_info_value[:players].each do |stats|
-      if stats[:shoe] > shoe_size
+    team_info_value[:players].each do |player_stats_value|
+      if player_stats_value[:shoe] > shoe_size
         shoe_size = stats[:shoe]
         rebounds = stats[:rebounds]
       end
